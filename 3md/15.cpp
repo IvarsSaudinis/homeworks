@@ -18,24 +18,30 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
- int N, P, G;
- double p;
+ int N,  G,  nnp;
+ double pr, P;
+ 
+ pr=0;
  
  cout<<"Ievadi naudu: ";
  cin>>N;
- cout<<"Ievadi Procentus";
+ cout<<"Ievadi procentus: ";
  cin>>P;
- cout<<"Ievadi gadu skaitu:";
+ cout<<"Ievadi gadu skaitu: ";
  cin>>G;
  
- p=p/100;
+ pr=P/100;
+ cout<<"p: "<<pr<<endl;
  for(int z=1; z<G+1; z++){
 	 
-	 cout<<z<<". gadā naudai ["<<N<<"] ieguva klāt "<<N*p<<endl;
-	 N=N+(N*p);
+	 nnp = N*pr;
+	 
+	 cout<<z<<". gadā naudai ["<<N<<"] ieguva klāt "<<nnp<<endl;
+	 
+	 N=N+nnp;
  }
  
-  
+  cout<<endl<<"Kopā sanāk: "<<N;
    	
  return 0;
 }
