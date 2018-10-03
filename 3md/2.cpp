@@ -15,7 +15,8 @@ int main(int argc, char **argv)
 {
    
 int summa=0,  izvele;
-
+float rez;
+	
  srand(time(0));   
  cout<<"Gadījuma skaitļi: ";
  for (int n=10; n>0; n--) {
@@ -23,11 +24,12 @@ int summa=0,  izvele;
 	izvele = rand() % 100 +1;
 	cout<<izvele<<"  ";	
     summa = summa+ izvele;
+	 rez = summa /10;
   } 
   
    
 
-cout<<endl<<"Šo 10 gadījuma skaitļu vidējais aritmētiskais ir "<<summa/10;
+cout<<endl<<"Šo 10 gadījuma skaitļu vidējais aritmētiskais ir "<<rez;
 		
 	
  	
