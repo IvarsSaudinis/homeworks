@@ -11,25 +11,25 @@
 
 using namespace std;
 
-int main(int argc, char **argv)
+int main()
 {
    
-int summa=0,  izvele;
-float rez;
-	
- srand(time(0));   
- cout<<"Gadījuma skaitļi: ";
- for (int n=10; n>0; n--) {
+float summa=0;
+int izvele;	
+ 	
+srand(time(0));   
+cout<<"Gadījuma skaitļi: ";
+for (int n=10; n>0; n--) {
     
 	izvele = rand() % 100 +1;
 	cout<<izvele<<"  ";	
-    summa = summa+ izvele;
-	 rez = summa /10;
+    	summa = summa+ izvele;
+	 
   } 
   
    
 
-cout<<endl<<"Šo 10 gadījuma skaitļu vidējais aritmētiskais ir "<<rez;
+cout<<endl<<"Šo 10 gadījuma skaitļu vidējais aritmētiskais ir "<<summa/10<<endl;
 		
 	
  	
